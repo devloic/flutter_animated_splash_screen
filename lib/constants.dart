@@ -18,8 +18,7 @@ String _androidMainActivityKitFile(
         String domain, String company, String appname) =>
     'android/app/src/main/kotlin/$domain/$company/$appname/MainActivity.kt';
 String applicationName = '\${applicationName}';
-String introMessage(String currentVersion) =>
-    '''
+String introMessage(String currentVersion) => '''
   ════════════════════════════════════════════
    🎈ANIMATED NATIVE SPLASH (v$currentVersion)
   ════════════════════════════════════════════
@@ -27,7 +26,7 @@ String introMessage(String currentVersion) =>
 
 ///Web
 const String _webFolder = 'web/';
-const String _webIndex = _webFolder + 'index.html';
+const String _webIndex = '${_webFolder}index.html';
 const String _webRelativeStyleFile = 'web/splash/style.css';
 const String _splashFile = 'web/splash/splash.json';
 const String _url = '\$FLUTTER_BASE_HREF';
